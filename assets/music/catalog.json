@@ -1,0 +1,167 @@
+[
+  {
+    "id": "romantic_01",
+    "filename": "romantic/romantic_01.mp3",
+    "name": "Torley Wong - The Final Selection ::: 230 diverse MP3s",
+    "artist": "Torley Wong",
+    "genre": "romantic",
+    "size_bytes": 3250176,
+    "license": "Creative Commons",
+    "archive_id": "Torley_Wong_-_The_Final_Selection",
+    "source_url": "https://archive.org/details/Torley_Wong_-_The_Final_Selection"
+  },
+  {
+    "id": "happy_01",
+    "filename": "happy/happy_01.mp3",
+    "name": "Audiorezout - The Island of Light",
+    "artist": "Audiorezout",
+    "genre": "happy",
+    "size_bytes": 4579596,
+    "license": "Creative Commons",
+    "archive_id": "10.-redcap_202205",
+    "source_url": "https://archive.org/details/10.-redcap_202205"
+  },
+  {
+    "id": "epic_01",
+    "filename": "epic/epic_01.mp3",
+    "name": "[apl030] tlon - from elsewhere to nowhere",
+    "artist": "Jean-Sebastién Roux",
+    "genre": "epic",
+    "size_bytes": 11143168,
+    "license": "Creative Commons",
+    "archive_id": "apl030",
+    "source_url": "https://archive.org/details/apl030"
+  },
+  {
+    "id": "folk_01",
+    "filename": "folk/folk_01.mp3",
+    "name": "Another Day, Another Way",
+    "artist": "No-Source Netlabel",
+    "genre": "folk",
+    "size_bytes": 4363485,
+    "license": "Creative Commons",
+    "archive_id": "NS050",
+    "source_url": "https://archive.org/details/NS050"
+  },
+  {
+    "id": "electronic_01",
+    "filename": "electronic/electronic_01.mp3",
+    "name": "kryptic universe - 3130351volt ep - [phoke35]",
+    "artist": "Unknown",
+    "genre": "electronic",
+    "size_bytes": 5082436,
+    "license": "Creative Commons",
+    "archive_id": "phoke035",
+    "source_url": "https://archive.org/details/phoke035"
+  },
+  {
+    "id": "romantic_02",
+    "filename": "romantic/romantic_02.mp3",
+    "name": "Donnie Sands - Katy, TX Acoustic",
+    "artist": "Donnie Sands Acoustic",
+    "genre": "romantic",
+    "size_bytes": 6360338,
+    "license": "Creative Commons",
+    "archive_id": "KatyTx",
+    "source_url": "https://archive.org/details/KatyTx"
+  },
+  {
+    "id": "romantic_03",
+    "filename": "romantic/romantic_03.mp3",
+    "name": "Holidium",
+    "artist": "Torley",
+    "genre": "romantic",
+    "size_bytes": 4983056,
+    "license": "Creative Commons",
+    "archive_id": "Holidium",
+    "source_url": "https://archive.org/details/Holidium"
+  },
+  {
+    "id": "happy_02",
+    "filename": "happy/happy_02.mp3",
+    "name": "Audiorezout - Through the Clouds",
+    "artist": "Audiorezout",
+    "genre": "happy",
+    "size_bytes": 3685337,
+    "license": "Creative Commons",
+    "archive_id": "13.-areleisi_202205",
+    "source_url": "https://archive.org/details/13.-areleisi_202205"
+  },
+  {
+    "id": "happy_03",
+    "filename": "happy/happy_03.mp3",
+    "name": "Audiorezout - We Must Fly",
+    "artist": "Audiorezout",
+    "genre": "happy",
+    "size_bytes": 5206829,
+    "license": "Creative Commons",
+    "archive_id": "03.-laassi_202205",
+    "source_url": "https://archive.org/details/03.-laassi_202205"
+  },
+  {
+    "id": "epic_02",
+    "filename": "epic/epic_02.mp3",
+    "name": "Cinematic Volume 10: Epic Choir",
+    "artist": "Grégoire Lourme",
+    "genre": "epic",
+    "size_bytes": 4654080,
+    "license": "Creative Commons",
+    "archive_id": "CinematicVolume10EpicChoir",
+    "source_url": "https://archive.org/details/CinematicVolume10EpicChoir"
+  },
+  {
+    "id": "folk_02",
+    "filename": "folk/folk_02.mp3",
+    "name": "Various - Clinical Sounds - Vol.1 (ca015)",
+    "artist": "Various",
+    "genre": "folk",
+    "size_bytes": 6291685,
+    "license": "Creative Commons",
+    "archive_id": "ca015_va_cs",
+    "source_url": "https://archive.org/details/ca015_va_cs"
+  },
+  {
+    "id": "electronic_02",
+    "filename": "electronic/electronic_02.mp3",
+    "name": "Necktar 2017 volume 9",
+    "artist": "Le Colibri Nécrophile / Earsheltering / ",
+    "genre": "electronic",
+    "size_bytes": 7207361,
+    "license": "Creative Commons",
+    "archive_id": "Necktar2017Volume9",
+    "source_url": "https://archive.org/details/Necktar2017Volume9"
+  },
+  {
+    "id": "calm_01",
+    "filename": "calm/calm_01.mp3",
+    "name": "Calm Track 1",
+    "artist": "Various",
+    "genre": "calm",
+    "size_bytes": 2597458,
+    "license": "Creative Commons",
+    "archive_id": "",
+    "source_url": "https://archive.org"
+  },
+  {
+    "id": "calm_02",
+    "filename": "calm/calm_02.mp3",
+    "name": "Calm Track 2",
+    "artist": "Various",
+    "genre": "calm",
+    "size_bytes": 9784461,
+    "license": "Creative Commons",
+    "archive_id": "",
+    "source_url": "https://archive.org"
+  },
+  {
+    "id": "calm_03",
+    "filename": "calm/calm_03.mp3",
+    "name": "Crime, Trailer, Horror, Cinematic Music Mix",
+    "artist": "Frank Schlimbach",
+    "genre": "calm",
+    "size_bytes": 2799050,
+    "license": "Creative Commons",
+    "archive_id": "monster-in-the-closet-main",
+    "source_url": "https://archive.org/details/monster-in-the-closet-main"
+  }
+]
