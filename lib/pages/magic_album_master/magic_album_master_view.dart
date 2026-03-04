@@ -11,8 +11,8 @@ class MagicAlbumMasterView extends GetView<MagicAlbumMasterLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.xcqimn.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.hsjxm.value
+              ? const CircularProgressIndicator(color: Colors.black)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class MagicAlbumMasterView extends GetView<MagicAlbumMasterLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.vrzuoawm();
+              controller.chdmaynr();
             },
             icon: const Icon(
               Icons.restart_alt,

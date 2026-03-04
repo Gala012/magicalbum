@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:magic_album/pages/magic_album_master/magic_album_master_binding.dart';
+import 'package:magic_album/pages/magic_album_master/magic_album_master_view.dart';
+import 'package:magic_album/pages/magic_album_music_editor/magic_album_music_editor_config.dart';
 import 'db_magic_album/data.dart';
 import '../pages/magic_album_tab/magic_album_tab_binding.dart';
 import '../pages/magic_album_tab/magic_album_tab_view.dart';
@@ -51,7 +54,7 @@ class MyApp extends StatelessWidget {
           child: GetMaterialApp(
             debugShowCheckedModeBanner: false,
             getPages: Magic,
-            initialRoute: '/magic_tab',
+            initialRoute: '/',
             theme: ThemeData(
               useMaterial3: true,
               primaryColor: primaryColor,
@@ -84,6 +87,14 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Magic = [
+  GetPage(
+    name: '/',
+    page: () => const MagicAlbumMasterView(),
+    binding: MagicAlbumMasterBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
   GetPage(
     name: '/magic_tab',
     page: () => const MagicAlbumTabView(),
@@ -120,6 +131,13 @@ List<GetPage<dynamic>> Magic = [
     name: '/magic_select-photos',
     page: () => const MagicAlbumSelectPhotosView(),
     binding: MagicAlbumSelectPhotosBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
+  GetPage(
+    name: '/magic_music-album-config',
+    page: () => const MagicAlbumMusicEditorConfig(),
     transition: Transition.cupertino,
     popGesture: true,
     preventDuplicates: false,
