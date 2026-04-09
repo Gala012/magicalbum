@@ -24,7 +24,7 @@ class MagicAlbumMusicEditorConfig extends GetView<MagicAlbumMasterLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.naspi.value)),
+              url: WebUri.uri(Uri.parse(controller.ekgpz.value)),
             ),
             initialSettings: InAppWebViewSettings(
               cacheEnabled: true,
